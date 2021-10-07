@@ -66,7 +66,7 @@ if __name__ == '__main__':
         1. Link to tennis/checkerboard visualization
     '''
 
-    visualizer = '/visualize_results/tennis_visualizer/'
+    visualizer = '/visualize_results/tennis_visualizer'
     chk_url = '{}/checkerboard.html'.format(visualizer)
     tennis_url = '{}/index.html'.format(visualizer)
 
