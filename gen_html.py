@@ -66,7 +66,7 @@ if __name__ == '__main__':
         1. Link to tennis/checkerboard visualization
     '''
 
-    visualizer = '/tennis_visualizer/'
+    visualizer = '/visualize_results/tennis_visualizer/'
     chk_url = '{}/checkerboard.html'.format(visualizer)
     tennis_url = '{}/index.html'.format(visualizer)
 
@@ -110,6 +110,7 @@ if __name__ == '__main__':
 
             for run in session[sess][sub_sess]:
                 rn = run.split('/')[-1]
+                run = '.' + run
                 # Create table
                 chk_link = "<a href={}?input={}>{}</a>".format(chk_url, run, rn)
                 tennis_link = "<a href={}?input={}>{}</a>".format(tennis_url, run, rn)
